@@ -1,0 +1,223 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10rem;
+}
+
+h1>span {
+    color: blueviolet;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.login-form {
+    background-color: burlywood;
+    width: 75%;
+    margin: auto;
+    padding: 40px;
+}
+
+input {
+    display: block;
+    margin-bottom: 1rem;
+    width: 75%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+#btn-submit {
+    padding: 20px 40px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: darkolivegreen;
+    border: none;
+    margin-top: 10px;
+}
+
+#btn-submit:hover {
+    background-color: black;
+}
+
+/* bank inside styles */
+#bank-info {
+    background-color: cadetblue;
+}
+
+#bank-info h1 {
+    font-size: 70px;
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+#info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#info-container h2 {
+    font-size: 40px;
+}
+
+.info {
+    padding-left: 15%;
+    border-radius: 10px;
+}
+
+.deposit {
+    background-color: bisque;
+}
+
+.withdraw {
+    background-color: thistle;
+}
+
+.balance {
+    background-color: coral;
+}
+
+.info p {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#user-input-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.input {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.user-deposit-input {
+    background-color: rgb(80, 80, 231);
+}
+
+.user-withdraw-input {
+    background-color: rgb(156, 102, 207);
+}
+
+#btn-deposit,
+#btn-withdraw {
+    padding: 15px 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: darkolivegreen;
+    border: none;
+}
+
+#btn-deposit:hover,
+#btn-withdraw:hover {
+    background-color: black;
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #btn-submit {
+        padding: 15px 30px;
+    }
+
+    /* inside bank part */
+    #bank-info h1 {
+        font-size: 28px;
+    }
+
+    #info-container h2 {
+        font-size: 15px;
+    }
+
+    #info-container {
+        width: 80%;
+    }
+
+    .info p {
+        font-size: 40px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #user-input-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+
+    input {
+        font-size: .75rem;
+    }
+
+    input::placeholder {
+        font-size: .75rem;
+    }
+
+    #btn-deposit,
+    #btn-withdraw {
+        padding: 10px 25px;
+        font-size: .75rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    #bank-info h1 {
+        font-size: 55px;
+    }
+
+    #info-container h2 {
+        font-size: 30px;
+    }
+
+    .info p {
+        font-size: 60px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #user-input-container h2 {
+        font-size: 29px;
+    }
+
+    input {
+        width: 85%;
+        font-size: .8rem;
+    }
+
+    input::placeholder {
+        font-size: .8rem;
+    }
+
+    #btn-deposit,
+    #btn-withdraw {
+        padding: 13px 27px;
+        font-size: .8rem;
+    }
+}

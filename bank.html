@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section id="bank-info">
+        <h1>Simple Bank Calculation !!!</h1>
+        <div id="info-container">
+            <div class="info deposit">
+                <h2>Deposit</h2>
+                <p>$<span id="deposit-total">0</span></p>
+            </div>
+            <div class="info withdraw">
+                <h2>Withdraw</h2>
+                <p>$<span id="withdraw-total">0</span></p>
+            </div>
+            <div class="info balance">
+                <h2>Balance</h2>
+                <p>$<span id="balance-total">0</span></p>
+            </div>
+        </div>
+        <div id="user-input-container">
+            <div class="user-deposit-input input">
+                <h2>Please Deposit</h2>
+                <input id="deposit-amount" type="" placeholder="$ amount you want to deposit">
+                <button id="btn-deposit">Deposit</button>
+            </div>
+            <div class="user-withdraw-input input">
+                <h2>Please Withdraw</h2>
+                <input id="withdraw-amount" type="" placeholder="$ amount you want to withdraw">
+                <button id="btn-withdraw">Withdraw</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/bank.js"></script>
+</html>
